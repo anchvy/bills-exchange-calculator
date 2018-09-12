@@ -77,10 +77,7 @@ class App extends Component {
     if (result) return result
 
     // if no data in cache, then calculate new data
-    result = {
-      ...BILL_INITIAL_STATE,
-      ...calculateBillCount(convDollar, true),
-    }
+    result = calculateBillCount(convDollar, true)
 
     // finally, cache data
     this.setCacheData(convDollar, result)
