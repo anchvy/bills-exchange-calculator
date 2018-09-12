@@ -37,8 +37,6 @@ const Input = styled.input`
   margin-bottom: 20px;
 `
 
-// const
-
 class MainPage extends React.Component {
   render() {
     const { value, onChangeTextInput, items } = this.props
